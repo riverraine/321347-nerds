@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс Каталог</title>
 </head>
 <body>
@@ -9,7 +10,7 @@
 
   	<!-- Logo, Main Navigation, Cart -->
   		<div class="index-logo">
-  			<img src="img/index-logo.png" width="160" height="65" alt="Логотип Нёрдс">
+  			<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
   		</div>
 		<nav>
 			<ul>
@@ -98,27 +99,27 @@
 			<section class="catalogue-grid">
 				<div class="catalogue-item"> 
 					<img src="img/browser.png" width="360" height="40" alt="Браузер"> <!-- Эти две картинки как-то можно схлопнуть в одну? -->
-					<img src="img/sedona.png" width="360" height="576" alt="Шаблон Седона">
+					<img src="img/sedona.jpg" width="360" height="576" alt="Шаблон Седона">
 				</div>
 				<div class="catalogue-item"> 
 					<img src="img/browser.png" width="360" height="40" alt="Браузер"> 
-					<img src="img/pink.png" width="360" height="576" alt="Шаблон Пинк">
+					<img src="img/pink.jpg" width="360" height="576" alt="Шаблон Пинк">
 				</div>
 				<div class="catalogue-item"> 
 					<img src="img/browser.png" width="360" height="40" alt="Браузер"> 
-					<img src="img/barbershop.png" width="360" height="576" alt="Шаблон Барбершоп">
+					<img src="img/barbershop.jpg" width="360" height="576" alt="Шаблон Барбершоп">
 				</div>
 				<div class="catalogue-item"> 
 					<img src="img/browser.png" width="360" height="40" alt="Браузер"> 
-					<img src="img/mishka.png" width="360" height="576" alt="Шаблон Мишка">
+					<img src="img/mishka.jpg" width="360" height="576" alt="Шаблон Мишка">
 				</div>
 				<div class="catalogue-item"> 
 					<img src="img/browser.png" width="360" height="40" alt="Браузер"> 
-					<img src="img/aplus.png" width="360" height="576" alt="Шаблон А-Плюс">
+					<img src="img/aplus.jpg" width="360" height="576" alt="Шаблон А-Плюс">
 				</div>
 				<div class="catalogue-item"> 
 					<img src="img/browser.png" width="360" height="40" alt="Браузер"> 
-					<img src="img/kvast.png" width="360" height="576" alt="Шаблон Кваст">
+					<img src="img/kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
 				</div>
 			</section>
 
