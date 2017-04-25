@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Нёрдс Каталог</title>
+</head>
+<body>
+  	<!-- Logo, Main Navigation, Cart -->
+	<header>
+  		<div class="container">
+	  		<div class="index-logo">
+	  			<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
+	  		</div>
+			<nav>
+				<ul>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a class="active">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="cart-block">
+					<a class="cart-link" href="#"></a>
+				</div>
+			</nav>
+			<h1 class="inner-title">Магазин готовых шаблонов</h1>
+		</div>
+	</header>
+
+	<main class="container">
+	<!-- Filter Section -->
+		<form class="filter">
+			<fieldset class="price-filter"> 
+				<!-- Бегунок покажут как делать далее. Пока оставляем как есть -->
+				<legend class="filter-title">
+					Стоимость:
+				</legend>
+				<input type="range" min="0" max="15000" step="100" value="10000"> 
+				<span>от</span>
+				<span>до</span>
+			</fieldset>
+
+			<fieldset class="grid-filter">
+				<legend class="filter-title">
+					Сетка:
+				</legend>
+				<input type="radio" name="grid-type" value="adaptive" id="adaptive" checked>
+				<label for="adaptive">Адаптивная</label>
+
+				<input type="radio" name="grid-type" value="fixed" id="fixed">
+				<label for="fixed">Фиксированная</label>
+
+				<input type="radio" name="grid-type" value="liquid" id="liquid">
+				<label for="liquid">Резиновая</label>
+			</fieldset>
+
+			<fieldset class="feature-filter">
+				<legend class="filter-title">
+					Особенности:
+				</legend>
+				<input type="checkbox" name="feature-1" checked> <!-- Нужно ли отмечать по макету checked?-->
+				<label for="">Слайдер</label>
+
+				<input type="checkbox" name="feature-2" value="advantages" id="advantages">
+				<label for="advantages">Блок преимуществ</label>
+
+				<input type="checkbox" name="feature-3" value="news" id="news" checked>
+				<label for="news">Новости</label>
+
+				<input type="checkbox" name="feature-4" value="gallery" id="gallery">
+				<label for="gallery">Галерея</label>
+
+				<input type="checkbox" name="feature-5" value="cart" id="cart">
+				<label for="cart">Корзина</label>
+			</fieldset>
+
+			<input class="show-filter" type="submit" value="Показать">
+
+		</form>	
+
+	<!-- Catalogue Section -->
+		<section class="catalogue">
+
+			<div class="sorted-by">
+				<span class="sorted-by-title">
+					Сортировать:
+				</span>
+				<div class="sort-by-block">
+					<button class="sorted-by-applied-option">
+						По цене
+					</button>
+					<button class="sorted-by-option">
+						По типу
+					</button>
+					<button class="sorted-by-option">
+						По названию
+					</button>
+					<button class="sort-up">Сортировка вверх</button>
+					<button class="sort-down">Сортировка вниз</button>
+				</div>
+			</div>
+
+			<section class="catalogue-grid">
+
+				<article class="catalogue-item"> 
+					<figure class="catalogue-item-pic">
+						<img src="img/sedona.jpg" width="360" height="576" alt="Шаблон Седона">
+					</figure>
+					<div class="">
+						<h2 class="catalogue-item-title">Sedona</h2>
+						<p class="catalogue-item-text">Информационный сайт для туристов</p>
+						<a class="catalogue-item-price" href="#">9 900 руб.</a>
+					</div>
+				</article>
+				<article class="catalogue-item"> 
+					<figure class="catalogue-item-pic">
+						<img src="img/pink.jpg" width="360" height="576" alt="Шаблон Пинк">
+					</figure>
+					<div class="">
+						<h2 class="catalogue-item-title">Pink app</h2>
+						<p class="catalogue-item-text">Продуктовый лендинг приложения для iOS и Android</p>
+						<a class="catalogue-item-price" href="#">9 900 руб.</a>
+					</div>
+				</article>
+				<article class="catalogue-item"> 
+					<figure class="catalogue-item-pic">
+						<img src="img/barbershop.jpg" width="360" height="576" alt="Шаблон Барбершоп">
+					</figure>
+					<div class="">
+						<h2 class="catalogue-item-title">Barbershop</h2>
+						<p class="catalogue-item-text">Сайт салона красоты. Для мужчин, да</p>
+						<a class="catalogue-item-price" href="#">9 900 руб.</a>
+					</div>
+				</article>
+				<article class="catalogue-item"> 
+					<figure class="catalogue-item-pic">
+						<img src="img/mishka.jpg" width="360" height="576" alt="Шаблон Мишка">
+					</figure>
+					<div class="">
+						<h2 class="catalogue-item-title">Mishka</h2>
+						<p class="catalogue-item-text">Интернет-магазин вязаных игрушек</p>
+						<a class="catalogue-item-price" href="#">9 900 руб.</a>
+					</div>
+				</article>
+				<article class="catalogue-item"> 
+					<figure class="catalogue-item-pic">
+						<img src="img/aplus.jpg" width="360" height="576" alt="Шаблон А-Плюс">
+					</figure>
+					<div class="">
+						<h2 class="catalogue-item-title">A Plus</h2>
+						<p class="catalogue-item-text">Лендинг курсов повышения квалификации</p>
+						<a class="catalogue-item-price" href="#">9 900 руб.</a>
+					</div>
+				</article>
+				<article class="catalogue-item"> 
+					<figure class="catalogue-item-pic">
+						<img src="img/kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
+					</figure>
+					<div class="">
+						<h2 class="catalogue-item-title">Кваст</h2>
+						<p class="catalogue-item-text">Промо-сайт производителя крафтового кваса</p>
+						<a class="catalogue-item-price" href="#">9 900 руб.</a>
+					</div>
+				</article>
+
+			</section>
+
+	<!-- Page Navigation-->
+			<div class="page-navigation">
+				<a class="page page-current">1</a>
+				<a class="page" href="#">2</a>
+				<a class="page" href="#">3</a>
+				<a class="next" href="#">Следующая</a>
+			</div>
+
+		</section>
+	<footer>
+		<section class="map">
+			<div class="container"><!--Или надо было оставить wrap? И !!!!!! где здесь сама карта? ее же нужно как-то вставить? как это вообще работает???-->
+				<div class="contact-block">
+					<p class="contact-title">
+						Nёrds Design Studio
+					</p>
+					<p>
+						191186, Санкт-Петербург, <br>
+						ул. Б. Конюшенная, д. 19/8 <br>
+					</p>
+					<p>
+						тел. +7 (812) 275-75-75
+					</p>
+					<a class="contact-us" href="#">Напишите нам</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer Social Section -->
+	
+		<div class="container">
+			<div class="social-buttons">
+				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>	
+			</div>
+			<div class="social-text">
+				<p class="social-text-title">Давайте дружить, это выгодно!</p>
+				<p>Скидка 10% для друзей из социальных сетей/</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
