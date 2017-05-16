@@ -34,18 +34,20 @@
 				<h1 class="inner-title">Магазин готовых шаблонов</h1>
 		</header>
 
-		<main class="container">
+		<main class="wrap">
 
 		<!-- Filter -->
-			
-			<section class="catalogue">
-
-				<div class="sorted-by">
+				<div class="wrap clearfix">
+					<div class="sorted-by">
 					<span class="sorted-by-title">
 						Сортировать:
 					</span>
+					<div class="sort-arrows">
+						<a class="sort-down" href="#">Сортировка вниз</a>
+						<a class="sort-up" href="#">Сортировка вверх</a>
+					</div>	
 					<div class="sort-by-block">
-						<a class="sorted-by-option">
+						<a class="sorted-by-option selected-option">
 							По цене
 						</a>
 						<a class="sorted-by-option">
@@ -54,69 +56,55 @@
 						<a class="sorted-by-option">
 							По названию
 						</a>
-						<a class="sort-down" href="#">Сортировка вниз</a>
-						<a class="sort-up" href="#">Сортировка вверх</a>
 					</div>
+								
 				</div>
-
-			</section> 
-
-			<div class="wrap clearfix">
 
 				<fieldset class="filter">
 					<form class="filter-holder"> 
 						
-						<div class="filter-block">
-							<p class="filter-title">
+						<fieldset class="filter-price filter-criteria">
+							<legend class="filter-title">
 								Стоимость:
-							</p>
-							<input type="range" min="0" max="15000" step="100" value="10000"> 
-							<div>
-								<span>от</span> 
-								<span>до</span>
-							</div>
-						</div>
+							</legend>
+							<div class="range-filter">
+						        <div class="range-controls">
+						        	<div class="scale">
+						            	<div class="bar" style="margin-left: 20%; width: 30%"></div>
+						        </div>
+							        <div class="toggle toggle-min"></div>
+							        <div class="toggle toggle-max"></div>
+						        </div>
+						        <div class="price-controls">
+							        <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+							        <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+						        </div>
+						      </div>
+						</fieldset>
 
-						<div class="filter-block">
-							<p class="filter-title">
-								Сетка:
-							</p>
-
-							<input class="option" type="radio" name="grid-type" value="adaptive" id="adaptive" checked>
+						<fieldset class="filter-grid filter-criteria">
+							<legend class="filter-title">Сетка:</legend>
+							<input class="option" type="radio" name="grid-type" value="adaptive" id="adaptive" checked disabled>
 							<label for="adaptive">Адаптивная</label>
-
 							<input class="option" type="radio" name="grid-type" value="fixed" id="fixed">
 							<label for="fixed">Фиксированная</label>
-
 							<input class="option" type="radio" name="grid-type" value="liquid" id="liquid">
 							<label for="liquid">Резиновая</label>
-						</div>
+						</fieldset>
 
-						<div class="filter-block">
-							<p class="filter-title">
-								Особенности:
-							</p>
-							
-							<label for="slider">Слайдер
-								<input class="option" type="checkbox" name="feature-1" id="slider" checked> 
-							</label>
-
-							<label for="advantages">Блок преимуществ
-								<input class="option" type="checkbox" name="feature-2" value="advantages" id="advantages">
-							</label>
-
-							<label for="news">Новости
-								<input class="option" type="checkbox" name="feature-3" value="news" id="news" checked>
-							</label>
-
-							<label for="gallery">Галерея
-								<input class="option" type="checkbox" name="feature-4" value="gallery" id="gallery">
-							</label>
-
-							<label for="cart">Корзина
-								<input class="option" type="checkbox" name="feature-5" value="cart" id="cart">
-							</label>
-						</div>
+						<fieldset class="filter-feature filter-criteria">
+							<legend class="filter-title">Особенности:</legend>
+							<input class="option" type="checkbox" name="feature-1" value="slider" id="slider" checked> 
+							<label for="slider">Слайдер</label>
+							<input class="option" type="checkbox" name="feature-2" value="advantages" id="advantages">
+							<label for="advantages">Блок преимуществ</label>
+							<input class="option" type="checkbox" name="feature-3" value="news" id="news" checked>
+							<label for="news">Новости</label>
+							<input class="option" type="checkbox" name="feature-4" value="gallery" id="gallery">
+							<label for="gallery">Галерея</label>
+							<input class="option" type="checkbox" name="feature-5" value="cart" id="cart">
+							<label for="cart">Корзина</label>
+						</fieldset>
 
 					</form>
 
@@ -198,7 +186,7 @@
 						    <li><a class="page-current">1</a></li>
 						    <li><a href="#">2</a></li>
 						    <li><a href="#">3</a></li>
-						    <li><a href="#">Следующая</a></li>
+						    <li><a class="next-page" href="#">Следующая</a></li>
 	    				</ul>
 
 	  				</div>
