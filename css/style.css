@@ -109,6 +109,7 @@ body {
 	margin: 0 auto 0 0;
 	padding: 0;
 	list-style: none;
+    justify-content: space-around;
 }
 
 .menu-list li {
@@ -128,6 +129,7 @@ body {
 }
 
 .menu a {
+    text-align: center;
     padding-bottom: 8px;
     font-weight: 500;
     line-height: 30px;
@@ -894,6 +896,10 @@ body {
     border: none;
 }
 
+.price-filter {
+    padding-top: 4px;
+}
+
 .filter-title {
     margin-bottom: 16px;
     line-height: 30px;
@@ -1117,7 +1123,7 @@ body {
 
 .sort-arrows {
     float: right;
-    width: 45px;
+    width: 42px;
 }
 
 .sort-up, .sort-down {
@@ -1129,7 +1135,7 @@ body {
 }
 
 .sort-down {
-    margin-right: 20px;
+    margin-right: 17px;
     background: url('../img/sort-down.png') no-repeat;
 }
 
@@ -1258,17 +1264,15 @@ body {
 }
 
 .pagination {
+    margin-bottom: 0;
     padding: 0;
-
 }
 
 .pagination li {
     display: inline-block;
     margin-top: 8px;
     margin-right: 7px;
-    margin-bottom: 0px;
-    vertical-align: middle;
-
+    vertical-align: middle
 }
 
 .pagination a {
