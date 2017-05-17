@@ -19,6 +19,7 @@ body {
 /*Font Styles*/
 
 /*h1*/
+
 .slider-headline, .inner-title {
     font-size: 55px;
     font-family: Roboto, Verdana, sans-serif;
@@ -27,14 +28,17 @@ body {
 }
 
 /*h2*/
+
 .description-title, .contact-us-title {
     font-size: 45px;
     font-family: Roboto, Verdana, sans-serif;
+    font-weight: 500;
     line-height: 45px;
     color: #000000;
 }
 
 /*h3*/
+
 .order-title  {
     margin: 0;
     padding-top: 20px;
@@ -52,12 +56,16 @@ body {
     position: relative;
 }
 
+.catalog-wrap {
+    margin: 3px auto;
+}
+
 /******************* INDEX PAGE*****************************/
 
 /*Logo, Main Navigation, Cart*/
 
 .header {
-    padding: 50px 0 0;
+    padding: 46px 0 0;
     background: #eee;
 }
 
@@ -84,14 +92,14 @@ body {
 .index-logo img {
     display: block;	
     max-width: 100%;
-    height: auto;
+    /*height: auto;*/
 }
 
 .menu {
     display: flex;
     width: 800px;
     align-items: flex-start;
-    margin-top: 10px;
+    margin-top: 20px;
     text-transform: uppercase;
 }
 
@@ -120,7 +128,7 @@ body {
 }
 
 .menu a {
-    padding: 10px;
+    padding-bottom: 8px;
     font-weight: 500;
     line-height: 30px;
     text-decoration: none;
@@ -137,10 +145,10 @@ body {
     opacity: 0.3;
 }
 
-.cart-block {
-    width: 115px;
+.cart-link {
+    padding-left: 40px;
     text-align: right;
-    background: url('../img/cart-icon.png') no-repeat 0px 5px;
+    background: url('../img/cart-icon.png') no-repeat 0 1px;
 }
 
 /*Slider*/
@@ -168,7 +176,7 @@ body {
 }
 
 .slider-list li {
-    padding-top: 75px;
+    padding-top: 78px;
     padding-bottom: 79px;
 }
 
@@ -320,7 +328,7 @@ body {
 .order-link {
     display: inline-block;
     min-width: 160px;
-	padding: 16px 10px;
+	padding: 17px 10px;
     border-radius: 3px;
     text-align: center;
     vertical-align: middle;
@@ -343,9 +351,12 @@ body {
 
 .order-title {
 	text-transform: uppercase;
+    padding-top: 18px;
 }
 
 .order-text {
+    text-align: left;
+    max-width: 245px;
     padding-bottom: 15px;
 }
 
@@ -383,6 +394,14 @@ body {
 
 /*About Us Section*/
 
+.description-title {
+    width: 665px;
+    padding: 0;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    text-align: left;
+}
+
 .about-us {
 	display: flex;
     justify-content: space-between;
@@ -390,12 +409,13 @@ body {
     padding-top: 40px;
 }
 
-.about-us-block {
+/*.about-us-block {
     width: 660px;
-}
+}*/
 
 .about-us-text {
-    padding-bottom: 13px;
+    margin-top: 0;
+    margin-bottom: 38px;
 }
 
 .about-us-stats {
@@ -403,6 +423,7 @@ body {
 }
 
 .orders-title {
+    margin: 0;
     font-weight: bold;
 	text-transform: uppercase;
     color: black;
@@ -424,6 +445,7 @@ body {
     padding-right: 5px;
     vertical-align: middle;
     font-size: 40px;
+
 }
 
 .about-us-logo img {
@@ -433,9 +455,8 @@ body {
 }
 
 .stats-title {
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 35px;
+    margin-top: 17px;
+    padding-bottom: 25px;
     font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;   
@@ -447,7 +468,6 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
 }
-
 
 .stats-block {
 	margin-right: 20px;
@@ -466,11 +486,12 @@ body {
 }
 
 .percent sup {
-    font-size: 30px;
+    font-size: 28px;
     color: black;
 }
 
 .percent-text {
+    margin-top: 20px;
     padding: 0;
     line-height: 18px;
     font-size: 16px;
@@ -483,9 +504,9 @@ body {
     justify-content: space-around;
     min-height: 182px;
     align-items: center;
-	margin-top: 50px;
+	margin-top: 48px;
     margin-bottom: 60px;
-    /*padding: 35px 30px;*/
+    padding: 45px 40px 40px 30px;
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee; 
 }
@@ -507,11 +528,12 @@ body {
     content: "";
     height: 52px;
     width: 2px;
-    background: #eeeeee;
+    background: #cccccc;
     position: absolute;
     right: -50px;
     top: 50%;
     margin-top: -26px;
+    opacity: 1;
 }
 
 .logo-link {
@@ -533,7 +555,7 @@ body {
 }
 
 .logo-item:first-child {
-	margin-right: 90px;
+	margin-right: 95px;
 }
 
 .logo-item:nth-child(2) {
@@ -542,6 +564,26 @@ body {
 
 .logo-item:nth-child(3) {
 	margin-right: 121px;
+}
+
+.map-container {
+    min-height: 419px;
+    padding-top: 53px;
+    background: url("../img/map.jpg") no-repeat 50% 41%;
+}
+
+.map {
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.map-image {
+    width: 1440px;
+    margin-left: -735px;
+    position: absolute;
+    top: 24px;
+    left: 50%;  
 }
 
 .contact-title {
@@ -555,7 +597,7 @@ body {
 
 .contact-block {
 	width: 319px;
-	padding-top: 53px;
+	padding-top: 50px;
     padding-bottom: 47px;
     padding-left: 51px;
     position: relative;
@@ -563,15 +605,21 @@ body {
 	background-color: white;
 }
 
-.contact-address, .contact-phone {
+.contact-address {
+    padding-top: 7px;
     padding-right: 67px;
 	color: #666666;
+}
+
+.contact-phone {
+    padding-top: 3px; 
+    color: #666666;
 }
 
 .contact-us {
     display: block;
     width: 219px;
-    margin-top: 40px;
+    margin-top: 35px;
 	padding: 16px 10px;
     line-height: 18px;
     text-align: center;
@@ -595,7 +643,7 @@ body {
 /*Footer Social Section*/
 
 .footer {
-  padding: 69px 0;
+    padding: 43px 0;
 }
 
 .social {
@@ -605,12 +653,12 @@ body {
 }
 
 .social-text-box {
-    margin-left: 140px;
+    margin-left: 130px;
 }
 
 .social-text-title {
     margin: 0;
-    padding-top: 5px;
+    padding-top: 10px;
 	font-size: 36px;
 	font-weight: bold;
 	line-height: 36px;/*для р обнулить отступы чтобы не было лишних*/
@@ -688,29 +736,6 @@ body {
     opacity: 0.3;
 }
 
-.map {
-    padding: 54px 0;
-    overflow: hidden;
-    position: relative;
-}
-
-.map-image {
-    width: 1440px;
-    margin-left: -735px;
-    position: absolute;
-    top: 24px;
-    left: 50%;  
-}
-
-.map-marker {
-    width: 231px;
-    height: 190px;
-    position: absolute;
-    bottom: 16%;
-    left: 57%;
-    z-index: 10;
-}
-
 /*Pop-up Contact Us Form*/
 
 .contact-block {
@@ -773,10 +798,12 @@ body {
 
 .input-holder input[type='text']:focus, .input-holder textarea:focus {
     border: 2px solid #000000;
+    outline: none;
 }
 
 .input-holder input[type='text']:invalid, .input-holder textarea:invalid {
     border: 2px solid #e74246;
+    outline: none;
 }
 
 .input-holder textarea {
@@ -829,20 +856,23 @@ body {
     border-color: #d7373b;
     color: #e37376;
     box-shadow: inset 0 2px 0 0 #c13135;
+    outline: none;
 }
 
 
-/*********************** CATALOGUE PAGE ****************************/
+/**************************************************** CATALOGUE PAGE *****************************************************************/
 
 
 .active {
-    border-bottom: 3px solid #fb565a;
+    border-bottom: 2px solid #fb565a;
 }
 
 .inner-title {
     margin: 80px auto 0;
-    padding-bottom: 118px;
+    padding-bottom: 108px;
     text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
 }
 
 /* Filter*/
@@ -851,16 +881,21 @@ body {
     border: none;
 }
 
+.filter-holder fieldset {
+    padding: 0;
+    margin: 0;
+}
+
 .filter {
     width: 260px;
     min-height: 300px;
-    margin-top: 40px;
+    margin-top: 50px;
     float: left;
     border: none;
 }
 
 .filter-title {
-    margin-bottom: 22px;
+    margin-bottom: 16px;
     line-height: 30px;
     text-transform: uppercase;
     font-weight: bold;
@@ -868,14 +903,14 @@ body {
     cursor: pointer;
 }
 
-.filter-criteria {
+.filter-holder .filter-criteria {
     border: none;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 
 .range-filter { 
-    width: 240px;
-    margin: 30px auto;
+    width: 260px;
+    margin: 33px 0 10px 0;
 }
 
 .range-controls {
@@ -907,18 +942,18 @@ body {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    border: 8px solid #fff;
+    border: 8px solid #ffffff;
     border-radius: 50%;
     background: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
 .range-controls .toggle-min {
-    left: 50px;
+    left: 15px;
 }
 
 .range-controls .toggle-max {
-    left: 110px;
+    left: 158px;
 }
 
 .price-controls {
@@ -940,7 +975,7 @@ body {
     font-size: 16px;
     width: 80px;
     margin-left: 10px;
-    padding: 8px 10px;
+    padding: 10px 10px;
     text-align: center;
     color: #283136;
     border: none;
@@ -1038,7 +1073,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     border: none;
     border-radius: 5px;
     background: #eeeeee;
@@ -1059,7 +1094,7 @@ body {
 
 .sorted-by {
     width: 760px;
-    margin-top: 60px;
+    margin-top: 55px;
     margin-left: 0;
     margin-bottom: 50px;
     float: right;
@@ -1069,7 +1104,10 @@ body {
     float: left;
     width: 160px;
     text-transform: uppercase;
+    line-height: 18px;
     font-weight: bold;
+    font-size: 18px;
+    color: #000000;
 }
 
 .sort-by-block {
@@ -1086,6 +1124,7 @@ body {
     display: inline-block;
     width: 9px;
     height: 9px;
+    vertical-align: middle;
     font-size: 0;   
 }
 
@@ -1127,8 +1166,9 @@ body {
     display: inline-block;
     width: 360px;
     margin-right: 40px;
-    margin-bottom: 36px;
+    margin-bottom: 24px;
     position: relative;
+    vertical-align: middle;
     border-top: 40px solid #eeeeee;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -1140,10 +1180,10 @@ body {
     width: 14px;
     height: 14px;
     top: -25px;
-    left: 10px;
+    left: 15px;
     border-radius: 50%;
-    box-shadow: 23px 0 0 #fff, 46px 0 0 #fff;
-    background: #fff;
+    box-shadow: 23px 0 0 #ffffff, 46px 0 0 #ffffff;
+    background: #ffffff;
     z-index: 10;
 }
 
@@ -1153,13 +1193,9 @@ body {
 
 .catalog-item:hover .catalog-info {
     display: block;
-}
-
-.catalog-info {
-    display: none;
     width: 100%;
-    height: 231px;
-    padding: 30px 60px 0px 60px;
+    height: 243px;
+    padding: 30px 60px 43px 60px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1167,27 +1203,39 @@ body {
     background-color: #eeeeee;
 }
 
+.catalog-info {
+    display: none;
+}
+
 .catalog-item-title {
-    margin: 0 0 20px;
+    display: inline-block;
+    margin-bottom: 20px;
     line-height: 30px;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 700;
-    color: #000;
+    font-weight: bold;
+    color: #000000;
 }
 
 .catalog-item-descr {
-    margin: 15px 0px;
-    padding: 0;
+    display: inline-block;
+    max-width: 195px;
+    margin: 0;
+    padding-bottom: 30px;
     line-height: 18px;
     font-size: 16px;
     color: #666666;
 }
 
+.long-descr {
+    max-width: 300px;
+}
+
 .catalog-btn {
     display: inline-block;
-    width: 100%;
+    width: 200px;
+    margin: auto;
     padding: 16px 10px;
     vertical-align: middle;
     line-height: 18px;
@@ -1211,12 +1259,16 @@ body {
 
 .pagination {
     padding: 0;
-    margin: 0;
+
 }
 
 .pagination li {
     display: inline-block;
-    margin-right: 11px;
+    margin-top: 8px;
+    margin-right: 7px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+
 }
 
 .pagination a {
